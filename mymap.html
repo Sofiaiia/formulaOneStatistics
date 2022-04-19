@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_674e0caf9741426ebdddf8c86487843d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_674e0caf9741426ebdddf8c86487843d" ></div>
+        
+</body>
+<script>    
+    
+            var map_674e0caf9741426ebdddf8c86487843d = L.map(
+                "map_674e0caf9741426ebdddf8c86487843d",
+                {
+                    center: [0, 0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_59b5d6ef7dc940479872582fb3171fa1 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_674e0caf9741426ebdddf8c86487843d);
+        
+    
+            var marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68 = L.markerClusterGroup(
+                {}
+            );
+            map_674e0caf9741426ebdddf8c86487843d.addLayer(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var marker_1e4881fc6f8842b5ab28f3279ee44ca3 = L.marker(
+                [-37.8497, 144.968],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_0a497bc094ee43b9829895455bb717f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_1e4881fc6f8842b5ab28f3279ee44ca3.setIcon(icon_0a497bc094ee43b9829895455bb717f9);
+        
+    
+            marker_1e4881fc6f8842b5ab28f3279ee44ca3.bindTooltip(
+                `<div>
+                     Albert Park Grand Prix Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0778e58590804286895ff3878946c32c = L.marker(
+                [2.76083, 101.738],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_0e6b6ede161e45daa13f138f16e54c4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_0778e58590804286895ff3878946c32c.setIcon(icon_0e6b6ede161e45daa13f138f16e54c4f);
+        
+    
+            marker_0778e58590804286895ff3878946c32c.bindTooltip(
+                `<div>
+                     Sepang International Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3d77264749b42cc9292bafa10f92f82 = L.marker(
+                [26.0325, 50.5106],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_5af52c2c4a344ee583b64aec8fd7d59d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_a3d77264749b42cc9292bafa10f92f82.setIcon(icon_5af52c2c4a344ee583b64aec8fd7d59d);
+        
+    
+            marker_a3d77264749b42cc9292bafa10f92f82.bindTooltip(
+                `<div>
+                     Bahrain International Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5cac242871ce4432abe7afca1627e0fd = L.marker(
+                [41.57, 2.26111],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_acc439356bb546e99ba176b68d4c593a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_5cac242871ce4432abe7afca1627e0fd.setIcon(icon_acc439356bb546e99ba176b68d4c593a);
+        
+    
+            marker_5cac242871ce4432abe7afca1627e0fd.bindTooltip(
+                `<div>
+                     Circuit de Barcelona-Catalunya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94152603d5914f58b58958f31e45b7ed = L.marker(
+                [40.9517, 29.405],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_156f99f2e9534d0b92df64bd52bf833e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_94152603d5914f58b58958f31e45b7ed.setIcon(icon_156f99f2e9534d0b92df64bd52bf833e);
+        
+    
+            marker_94152603d5914f58b58958f31e45b7ed.bindTooltip(
+                `<div>
+                     Istanbul Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7e0b90e5717d4d91acf48beacca42d80 = L.marker(
+                [43.7347, 7.42056],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_1cdce377da2a477a9840065e3003291c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_7e0b90e5717d4d91acf48beacca42d80.setIcon(icon_1cdce377da2a477a9840065e3003291c);
+        
+    
+            marker_7e0b90e5717d4d91acf48beacca42d80.bindTooltip(
+                `<div>
+                     Circuit de Monaco
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5647284dd1c54f61af0ae28a33c592f1 = L.marker(
+                [45.5, -73.5228],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_c0405512b4e4462ea2bcc59fb5db5983 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_5647284dd1c54f61af0ae28a33c592f1.setIcon(icon_c0405512b4e4462ea2bcc59fb5db5983);
+        
+    
+            marker_5647284dd1c54f61af0ae28a33c592f1.bindTooltip(
+                `<div>
+                     Circuit Gilles Villeneuve
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e51a26545d894e07aaf87b8aaa7f0541 = L.marker(
+                [46.8642, 3.16361],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_d8263cbeba5f49e69e0555d57a00bb14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_e51a26545d894e07aaf87b8aaa7f0541.setIcon(icon_d8263cbeba5f49e69e0555d57a00bb14);
+        
+    
+            marker_e51a26545d894e07aaf87b8aaa7f0541.bindTooltip(
+                `<div>
+                     Circuit de Nevers Magny-Cours
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e219a6f23421448b8f37ba60c85068a4 = L.marker(
+                [52.0786, -1.01694],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_338eefee52324c27aa566ae7f03d3e92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_e219a6f23421448b8f37ba60c85068a4.setIcon(icon_338eefee52324c27aa566ae7f03d3e92);
+        
+    
+            marker_e219a6f23421448b8f37ba60c85068a4.bindTooltip(
+                `<div>
+                     Silverstone Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf3b21f4f55c405eab42050fc1c3bb0a = L.marker(
+                [49.3278, 8.56583],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_77f13327e2cf48f5a0b3a81b85910f2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_cf3b21f4f55c405eab42050fc1c3bb0a.setIcon(icon_77f13327e2cf48f5a0b3a81b85910f2d);
+        
+    
+            marker_cf3b21f4f55c405eab42050fc1c3bb0a.bindTooltip(
+                `<div>
+                     Hockenheimring
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_05dad6696e1e44138a43dd3b7b145cfb = L.marker(
+                [47.5789, 19.2486],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_23aa0625044f42a4b567aa791ea9ee12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_05dad6696e1e44138a43dd3b7b145cfb.setIcon(icon_23aa0625044f42a4b567aa791ea9ee12);
+        
+    
+            marker_05dad6696e1e44138a43dd3b7b145cfb.bindTooltip(
+                `<div>
+                     Hungaroring
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e82d2cc54604a2d98ff702615ae399a = L.marker(
+                [39.4589, -0.331667],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_f30d7f7f0b874127ad72c159affe776b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_3e82d2cc54604a2d98ff702615ae399a.setIcon(icon_f30d7f7f0b874127ad72c159affe776b);
+        
+    
+            marker_3e82d2cc54604a2d98ff702615ae399a.bindTooltip(
+                `<div>
+                     Valencia Street Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95422c44dce14e50ba50e0b3b32ed34a = L.marker(
+                [50.4372, 5.97139],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_c92f781328ee4601b375e0e6c28cdb82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_95422c44dce14e50ba50e0b3b32ed34a.setIcon(icon_c92f781328ee4601b375e0e6c28cdb82);
+        
+    
+            marker_95422c44dce14e50ba50e0b3b32ed34a.bindTooltip(
+                `<div>
+                     Circuit de Spa-Francorchamps
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fcdb48520daf4f9e93fd9a4b047e2eac = L.marker(
+                [45.6156, 9.28111],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_9ac772cd84844653bfeae1be6a5d1092 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_fcdb48520daf4f9e93fd9a4b047e2eac.setIcon(icon_9ac772cd84844653bfeae1be6a5d1092);
+        
+    
+            marker_fcdb48520daf4f9e93fd9a4b047e2eac.bindTooltip(
+                `<div>
+                     Autodromo Nazionale di Monza
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a49ecb40af34928a8ea242d01840bd8 = L.marker(
+                [1.2914, 103.864],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_6ffe9080ecc14fcb9a70a16d4e44e17d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_8a49ecb40af34928a8ea242d01840bd8.setIcon(icon_6ffe9080ecc14fcb9a70a16d4e44e17d);
+        
+    
+            marker_8a49ecb40af34928a8ea242d01840bd8.bindTooltip(
+                `<div>
+                     Marina Bay Street Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9fca1d5d72594de4bb1c626ade2420bb = L.marker(
+                [35.3717, 138.927],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_94ff1be25a63464ab4d6aa3a206582fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_9fca1d5d72594de4bb1c626ade2420bb.setIcon(icon_94ff1be25a63464ab4d6aa3a206582fa);
+        
+    
+            marker_9fca1d5d72594de4bb1c626ade2420bb.bindTooltip(
+                `<div>
+                     Fuji Speedway
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1cb8dc26952744a3bab5df9838e86108 = L.marker(
+                [31.3389, 121.22],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_7dce0c3ff3184c24b4779ed07c83d416 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_1cb8dc26952744a3bab5df9838e86108.setIcon(icon_7dce0c3ff3184c24b4779ed07c83d416);
+        
+    
+            marker_1cb8dc26952744a3bab5df9838e86108.bindTooltip(
+                `<div>
+                     Shanghai International Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f992bb2617684c18a7d301f394bdb28f = L.marker(
+                [-23.7036, -46.6997],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_349eb965d3464a0684d5bf885b767d5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_f992bb2617684c18a7d301f394bdb28f.setIcon(icon_349eb965d3464a0684d5bf885b767d5e);
+        
+    
+            marker_f992bb2617684c18a7d301f394bdb28f.bindTooltip(
+                `<div>
+                     Autódromo José Carlos Pace
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7db8777e6ab45f69f02ee654a16c1d2 = L.marker(
+                [39.795, -86.2347],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_3903e0fd7d5b4a028cea8adbfbcab766 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_e7db8777e6ab45f69f02ee654a16c1d2.setIcon(icon_3903e0fd7d5b4a028cea8adbfbcab766);
+        
+    
+            marker_e7db8777e6ab45f69f02ee654a16c1d2.bindTooltip(
+                `<div>
+                     Indianapolis Motor Speedway
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c37809121b18465688db605f4b542810 = L.marker(
+                [50.3356, 6.9475],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_802b4ac55cdf4954bde0b4283997a6b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_c37809121b18465688db605f4b542810.setIcon(icon_802b4ac55cdf4954bde0b4283997a6b2);
+        
+    
+            marker_c37809121b18465688db605f4b542810.bindTooltip(
+                `<div>
+                     Nürburgring
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e31449d871354c179876902d76ab843d = L.marker(
+                [44.3439, 11.7167],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_59e0ef0ed433463d964f8f3cd91615d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_e31449d871354c179876902d76ab843d.setIcon(icon_59e0ef0ed433463d964f8f3cd91615d5);
+        
+    
+            marker_e31449d871354c179876902d76ab843d.bindTooltip(
+                `<div>
+                     Autodromo Enzo e Dino Ferrari
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_692bd37fc60740b687115e20bdb09740 = L.marker(
+                [34.8431, 136.541],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_80ae2ab1796e47b7a9327c68111e2133 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_692bd37fc60740b687115e20bdb09740.setIcon(icon_80ae2ab1796e47b7a9327c68111e2133);
+        
+    
+            marker_692bd37fc60740b687115e20bdb09740.bindTooltip(
+                `<div>
+                     Suzuka Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1b6aeead15a42e482656ea89d4ff829 = L.marker(
+                [47.2197, 14.7647],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_45832769c72d4ac090ba4a464ee80d66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_e1b6aeead15a42e482656ea89d4ff829.setIcon(icon_45832769c72d4ac090ba4a464ee80d66);
+        
+    
+            marker_e1b6aeead15a42e482656ea89d4ff829.bindTooltip(
+                `<div>
+                     A1-Ring
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a27b61f56a624762b81d10aa42ffef0c = L.marker(
+                [24.4672, 54.6031],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_4b5d2d5071fc4c08b233f77d38dd7d18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_a27b61f56a624762b81d10aa42ffef0c.setIcon(icon_4b5d2d5071fc4c08b233f77d38dd7d18);
+        
+    
+            marker_a27b61f56a624762b81d10aa42ffef0c.bindTooltip(
+                `<div>
+                     Yas Marina Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89fbf181d33c41dca308bddae2b29d23 = L.marker(
+                [-34.6943, -58.4593],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_c6f45cf8157a4b7ba6845bf4d706060f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_89fbf181d33c41dca308bddae2b29d23.setIcon(icon_c6f45cf8157a4b7ba6845bf4d706060f);
+        
+    
+            marker_89fbf181d33c41dca308bddae2b29d23.bindTooltip(
+                `<div>
+                     Autódromo Juan y Oscar Gálvez
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1054b608a284c4681d45c00d20cccdd = L.marker(
+                [36.7083, -6.03417],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_9a3e1ab27c0b4c6aae240c0b29b6dc4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_b1054b608a284c4681d45c00d20cccdd.setIcon(icon_9a3e1ab27c0b4c6aae240c0b29b6dc4e);
+        
+    
+            marker_b1054b608a284c4681d45c00d20cccdd.bindTooltip(
+                `<div>
+                     Circuito de Jerez
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd09deebb3dc4f60b721c02ec681e875 = L.marker(
+                [38.7506, -9.39417],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_aebda9994e0a48caac245e048fcdb874 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_dd09deebb3dc4f60b721c02ec681e875.setIcon(icon_aebda9994e0a48caac245e048fcdb874);
+        
+    
+            marker_dd09deebb3dc4f60b721c02ec681e875.bindTooltip(
+                `<div>
+                     Autódromo do Estoril
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_45c75948f6ef480bb3dafbde509c04ff = L.marker(
+                [34.915, 134.221],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_27377d5317934efa8f3ea5c3a538cfc4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_45c75948f6ef480bb3dafbde509c04ff.setIcon(icon_27377d5317934efa8f3ea5c3a538cfc4);
+        
+    
+            marker_45c75948f6ef480bb3dafbde509c04ff.bindTooltip(
+                `<div>
+                     Okayama International Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39c7d840120a4911b22e9b07bbcb2581 = L.marker(
+                [-34.9272, 138.617],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_514c4ee0ac6c4d0cb6e51c913e7bfa23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_39c7d840120a4911b22e9b07bbcb2581.setIcon(icon_514c4ee0ac6c4d0cb6e51c913e7bfa23);
+        
+    
+            marker_39c7d840120a4911b22e9b07bbcb2581.bindTooltip(
+                `<div>
+                     Adelaide Street Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ecba9272e6a4660abf4b29e0dd8b87b = L.marker(
+                [-25.9894, 28.0767],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_49a92a0de10f475cb5536fb1c1131f3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_7ecba9272e6a4660abf4b29e0dd8b87b.setIcon(icon_49a92a0de10f475cb5536fb1c1131f3d);
+        
+    
+            marker_7ecba9272e6a4660abf4b29e0dd8b87b.bindTooltip(
+                `<div>
+                     Kyalami
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b9b6514b0904328a9b4d6fd4755e6c6 = L.marker(
+                [52.8306, -1.37528],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_ba01907c7deb4e32b26dd2e0c380a705 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_3b9b6514b0904328a9b4d6fd4755e6c6.setIcon(icon_ba01907c7deb4e32b26dd2e0c380a705);
+        
+    
+            marker_3b9b6514b0904328a9b4d6fd4755e6c6.bindTooltip(
+                `<div>
+                     Donington Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f89b74c1350a466bb9e9c040f2bdb61d = L.marker(
+                [19.4042, -99.0907],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_474a1c5e251f46c487c68ab1c24fd4ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_f89b74c1350a466bb9e9c040f2bdb61d.setIcon(icon_474a1c5e251f46c487c68ab1c24fd4ca);
+        
+    
+            marker_f89b74c1350a466bb9e9c040f2bdb61d.bindTooltip(
+                `<div>
+                     Autódromo Hermanos Rodríguez
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5404d675763c4ffa9af043b8bb42f9e0 = L.marker(
+                [33.4479, -112.075],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_6ebe19058b6741a2bd328153fd431467 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_5404d675763c4ffa9af043b8bb42f9e0.setIcon(icon_6ebe19058b6741a2bd328153fd431467);
+        
+    
+            marker_5404d675763c4ffa9af043b8bb42f9e0.bindTooltip(
+                `<div>
+                     Phoenix street circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33574df4a72743329d23cf228c7128e4 = L.marker(
+                [43.2506, 5.79167],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_690f5937ffd84d6795db02ef69eb29a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_33574df4a72743329d23cf228c7128e4.setIcon(icon_690f5937ffd84d6795db02ef69eb29a7);
+        
+    
+            marker_33574df4a72743329d23cf228c7128e4.bindTooltip(
+                `<div>
+                     Circuit Paul Ricard
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e459b818871d4414a76629ef09cd0bdd = L.marker(
+                [34.7333, 126.417],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_8c38cfcd4a1e4f05b9b7bd5b43f48e6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_e459b818871d4414a76629ef09cd0bdd.setIcon(icon_8c38cfcd4a1e4f05b9b7bd5b43f48e6f);
+        
+    
+            marker_e459b818871d4414a76629ef09cd0bdd.bindTooltip(
+                `<div>
+                     Korean International Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b8e72ced3d74060a1ec64d5568b30d0 = L.marker(
+                [-22.9756, -43.395],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_93a15e1458694537ad8cfb2845ef3b97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_6b8e72ced3d74060a1ec64d5568b30d0.setIcon(icon_93a15e1458694537ad8cfb2845ef3b97);
+        
+    
+            marker_6b8e72ced3d74060a1ec64d5568b30d0.bindTooltip(
+                `<div>
+                     Autódromo Internacional Nelson Piquet
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34e03f50300b4ed597988e3a5eaf95c5 = L.marker(
+                [42.3298, -83.0401],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_8f6f6356a59048c9ace3d088dee7ae76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_34e03f50300b4ed597988e3a5eaf95c5.setIcon(icon_8f6f6356a59048c9ace3d088dee7ae76);
+        
+    
+            marker_34e03f50300b4ed597988e3a5eaf95c5.bindTooltip(
+                `<div>
+                     Detroit Street Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b8ee9190aef24b539efedf48013c6166 = L.marker(
+                [51.3569, 0.263056],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_c93504e4f25e415c9d647b7abcc32f3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_b8ee9190aef24b539efedf48013c6166.setIcon(icon_c93504e4f25e415c9d647b7abcc32f3f);
+        
+    
+            marker_b8ee9190aef24b539efedf48013c6166.bindTooltip(
+                `<div>
+                     Brands Hatch
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3ec377d45344fbcb241e019d6bcc597 = L.marker(
+                [52.3888, 4.54092],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_d7bfec9cc0d74b95a46c9b24e3729479 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_e3ec377d45344fbcb241e019d6bcc597.setIcon(icon_d7bfec9cc0d74b95a46c9b24e3729479);
+        
+    
+            marker_e3ec377d45344fbcb241e019d6bcc597.bindTooltip(
+                `<div>
+                     Circuit Park Zandvoort
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_971eabff86ab4b4d9de73f1f012218d1 = L.marker(
+                [50.9894, 5.25694],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_b69cddd219204938a5903cc66b562df3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_971eabff86ab4b4d9de73f1f012218d1.setIcon(icon_b69cddd219204938a5903cc66b562df3);
+        
+    
+            marker_971eabff86ab4b4d9de73f1f012218d1.bindTooltip(
+                `<div>
+                     Zolder
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf5bdca80f8e4dadac955ce6807df8bc = L.marker(
+                [47.3625, 4.89913],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_b52dfcb7c057441ab3c50e19d34f047b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_cf5bdca80f8e4dadac955ce6807df8bc.setIcon(icon_b52dfcb7c057441ab3c50e19d34f047b);
+        
+    
+            marker_cf5bdca80f8e4dadac955ce6807df8bc.bindTooltip(
+                `<div>
+                     Dijon-Prenois
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d9b1f8d12874462abd356b9ce3bc2de6 = L.marker(
+                [32.7774, -96.7587],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_ae01bfb6dae84f28b24f3b4dfbe629d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_d9b1f8d12874462abd356b9ce3bc2de6.setIcon(icon_ae01bfb6dae84f28b24f3b4dfbe629d9);
+        
+    
+            marker_d9b1f8d12874462abd356b9ce3bc2de6.bindTooltip(
+                `<div>
+                     Fair Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29e9ec60f60d40d09da376a63ccdb600 = L.marker(
+                [33.7651, -118.189],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_63ad59b425f64a9a98e55fdd106698b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_29e9ec60f60d40d09da376a63ccdb600.setIcon(icon_63ad59b425f64a9a98e55fdd106698b2);
+        
+    
+            marker_29e9ec60f60d40d09da376a63ccdb600.bindTooltip(
+                `<div>
+                     Long Beach
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8332026230744d33a551a7c7f78a8540 = L.marker(
+                [36.1162, -115.174],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_695e87e882034d959d498181aeb5d24a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_8332026230744d33a551a7c7f78a8540.setIcon(icon_695e87e882034d959d498181aeb5d24a);
+        
+    
+            marker_8332026230744d33a551a7c7f78a8540.bindTooltip(
+                `<div>
+                     Las Vegas Street Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd7b8329cfe04c6594b7339d3bbf99ca = L.marker(
+                [40.6171, -3.58558],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_fe24250c66a84eab8fdb638639ec007b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_dd7b8329cfe04c6594b7339d3bbf99ca.setIcon(icon_fe24250c66a84eab8fdb638639ec007b);
+        
+    
+            marker_dd7b8329cfe04c6594b7339d3bbf99ca.bindTooltip(
+                `<div>
+                     Jarama
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_48f827b872044e8a828871106a5802f0 = L.marker(
+                [42.3369, -76.9272],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_92683a787f6a4ef8a9f94478964e3c9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_48f827b872044e8a828871106a5802f0.setIcon(icon_92683a787f6a4ef8a9f94478964e3c9d);
+        
+    
+            marker_48f827b872044e8a828871106a5802f0.bindTooltip(
+                `<div>
+                     Watkins Glen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a821a07714c24662a9da77e28c586b86 = L.marker(
+                [57.2653, 13.6042],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_8adcac1800dc40c19bbe81c74694fb7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_a821a07714c24662a9da77e28c586b86.setIcon(icon_8adcac1800dc40c19bbe81c74694fb7a);
+        
+    
+            marker_a821a07714c24662a9da77e28c586b86.bindTooltip(
+                `<div>
+                     Scandinavian Raceway
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55b5a2cea546489b95fa81d9a91d2037 = L.marker(
+                [44.0481, -78.6756],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_e79b828a31de4396a04bef0298d90824 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_55b5a2cea546489b95fa81d9a91d2037.setIcon(icon_e79b828a31de4396a04bef0298d90824);
+        
+    
+            marker_55b5a2cea546489b95fa81d9a91d2037.bindTooltip(
+                `<div>
+                     Mosport International Raceway
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_acb64ff4d7b141b1b251c6f453468620 = L.marker(
+                [41.3664, 2.15167],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_045669f465eb4f2a8dcb0d7306b7342e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_acb64ff4d7b141b1b251c6f453468620.setIcon(icon_045669f465eb4f2a8dcb0d7306b7342e);
+        
+    
+            marker_acb64ff4d7b141b1b251c6f453468620.bindTooltip(
+                `<div>
+                     Montjuïc
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6ac35f15d5147a79631c2674fb25d0d = L.marker(
+                [50.6211, 4.32694],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_cb41ed99530a424da9861b9dc86e08a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_f6ac35f15d5147a79631c2674fb25d0d.setIcon(icon_cb41ed99530a424da9861b9dc86e08a3);
+        
+    
+            marker_f6ac35f15d5147a79631c2674fb25d0d.bindTooltip(
+                `<div>
+                     Nivelles-Baulers
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6291d66caef0409083c722507dd1cc18 = L.marker(
+                [45.7472, 3.03889],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_40cb1050e8084cfda9dad7f7f9c5437d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_6291d66caef0409083c722507dd1cc18.setIcon(icon_40cb1050e8084cfda9dad7f7f9c5437d);
+        
+    
+            marker_6291d66caef0409083c722507dd1cc18.bindTooltip(
+                `<div>
+                     Charade Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_017fc9741a73438eb64fb37dba95df74 = L.marker(
+                [46.1877, -74.6099],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_4f34efefebeb4043928766a4c0ca5cfd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_017fc9741a73438eb64fb37dba95df74.setIcon(icon_4f34efefebeb4043928766a4c0ca5cfd);
+        
+    
+            marker_017fc9741a73438eb64fb37dba95df74.bindTooltip(
+                `<div>
+                     Circuit Mont-Tremblant
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d38d0b8f66c64408b1c27f66f1b57fb5 = L.marker(
+                [49.3306, 1.00458],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_7371c0e04a694ac39037a2763a55c111 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_d38d0b8f66c64408b1c27f66f1b57fb5.setIcon(icon_7371c0e04a694ac39037a2763a55c111);
+        
+    
+            marker_d38d0b8f66c64408b1c27f66f1b57fb5.bindTooltip(
+                `<div>
+                     Rouen-Les-Essarts
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d5030d6b69b74f268a19af5351cd2498 = L.marker(
+                [47.95, 0.224231],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_86a3ba103e504d3782efde25ea3a6597 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_d5030d6b69b74f268a19af5351cd2498.setIcon(icon_86a3ba103e504d3782efde25ea3a6597);
+        
+    
+            marker_d5030d6b69b74f268a19af5351cd2498.bindTooltip(
+                `<div>
+                     Le Mans
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_195fb2557b404dfd930f3383772e39ff = L.marker(
+                [49.2542, 3.93083],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_6be5ee404c2b4bc7896ebaf05a83ed4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_195fb2557b404dfd930f3383772e39ff.setIcon(icon_6be5ee404c2b4bc7896ebaf05a83ed4b);
+        
+    
+            marker_195fb2557b404dfd930f3383772e39ff.bindTooltip(
+                `<div>
+                     Reims-Gueux
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc324b7e1411413b8ab08e1509a9913d = L.marker(
+                [-33.0486, 27.8736],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_cabffa994e974ce5929e63ea5aee7421 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_bc324b7e1411413b8ab08e1509a9913d.setIcon(icon_cabffa994e974ce5929e63ea5aee7421);
+        
+    
+            marker_bc324b7e1411413b8ab08e1509a9913d.bindTooltip(
+                `<div>
+                     Prince George Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f21a347d495c4b60a78a59f1c261c495 = L.marker(
+                [47.2039, 14.7478],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_4abbe334fe04416aa28be40c77db36c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_f21a347d495c4b60a78a59f1c261c495.setIcon(icon_4abbe334fe04416aa28be40c77db36c9);
+        
+    
+            marker_f21a347d495c4b60a78a59f1c261c495.bindTooltip(
+                `<div>
+                     Zeltweg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4976dea278847a7ac47e6f0ac099d69 = L.marker(
+                [53.4769, -2.94056],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_90b43724c6854817900236774752a515 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_e4976dea278847a7ac47e6f0ac099d69.setIcon(icon_90b43724c6854817900236774752a515);
+        
+    
+            marker_e4976dea278847a7ac47e6f0ac099d69.bindTooltip(
+                `<div>
+                     Aintree
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc1f7c844dd343328e0ffab1a5bad673 = L.marker(
+                [41.1705, -8.67325],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_6d04d6d7e293494fb0a94b05449ae817 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_dc1f7c844dd343328e0ffab1a5bad673.setIcon(icon_6d04d6d7e293494fb0a94b05449ae817);
+        
+    
+            marker_dc1f7c844dd343328e0ffab1a5bad673.bindTooltip(
+                `<div>
+                     Circuito da Boavista
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9be90873a3fb44fdafc6e2ab78f205dc = L.marker(
+                [33.937, -117.273],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_8d17413138bd4124970b0a6306db373b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_9be90873a3fb44fdafc6e2ab78f205dc.setIcon(icon_8d17413138bd4124970b0a6306db373b);
+        
+    
+            marker_9be90873a3fb44fdafc6e2ab78f205dc.bindTooltip(
+                `<div>
+                     Riverside International Raceway
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95cffba201de4cb38f2e01efde7d23f3 = L.marker(
+                [52.4806, 13.2514],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_659f99878a814a9292047db07348bdea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_95cffba201de4cb38f2e01efde7d23f3.setIcon(icon_659f99878a814a9292047db07348bdea);
+        
+    
+            marker_95cffba201de4cb38f2e01efde7d23f3.bindTooltip(
+                `<div>
+                     AVUS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_808d4bff1920410e9523c1261e9a776a = L.marker(
+                [38.7197, -9.20306],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_fc14bab58aee491982a7851ad04c0f2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_808d4bff1920410e9523c1261e9a776a.setIcon(icon_fc14bab58aee491982a7851ad04c0f2f);
+        
+    
+            marker_808d4bff1920410e9523c1261e9a776a.bindTooltip(
+                `<div>
+                     Monsanto Park Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f85b4e614f534a1ba67c6d97ca9cc36d = L.marker(
+                [27.4547, -81.3483],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_3c14bae8d27848e596ed32625ce6dcb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_f85b4e614f534a1ba67c6d97ca9cc36d.setIcon(icon_3c14bae8d27848e596ed32625ce6dcb1);
+        
+    
+            marker_f85b4e614f534a1ba67c6d97ca9cc36d.bindTooltip(
+                `<div>
+                     Sebring International Raceway
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7e1ee60350264767b408dee382c15271 = L.marker(
+                [33.5786, -7.6875],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_aaf58e9f440c450dbc2adc2e817acd23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_7e1ee60350264767b408dee382c15271.setIcon(icon_aaf58e9f440c450dbc2adc2e817acd23);
+        
+    
+            marker_7e1ee60350264767b408dee382c15271.bindTooltip(
+                `<div>
+                     Ain Diab
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ba0c5676ace43409ada031bc1e76571 = L.marker(
+                [42.475, 14.1508],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_26f968b701b643ec816a430be864ee0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_9ba0c5676ace43409ada031bc1e76571.setIcon(icon_26f968b701b643ec816a430be864ee0e);
+        
+    
+            marker_9ba0c5676ace43409ada031bc1e76571.bindTooltip(
+                `<div>
+                     Pescara Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6d718961f214424bfb5cc0fb243c89b = L.marker(
+                [46.9589, 7.40194],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_16ff5f889f61416fa03f704560bbcead = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_f6d718961f214424bfb5cc0fb243c89b.setIcon(icon_16ff5f889f61416fa03f704560bbcead);
+        
+    
+            marker_f6d718961f214424bfb5cc0fb243c89b.bindTooltip(
+                `<div>
+                     Circuit Bremgarten
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2deda7f70b2542d18b1c66138873975f = L.marker(
+                [41.3903, 2.11667],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_f2690c33977044d69fbbab2fa0728c25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_2deda7f70b2542d18b1c66138873975f.setIcon(icon_f2690c33977044d69fbbab2fa0728c25);
+        
+    
+            marker_2deda7f70b2542d18b1c66138873975f.bindTooltip(
+                `<div>
+                     Circuit de Pedralbes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_352a97ab96d04252b8c6b2a6b87c6bb7 = L.marker(
+                [28.3487, 77.5331],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_5512d2e110fb469195d9e01d4206e25d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_352a97ab96d04252b8c6b2a6b87c6bb7.setIcon(icon_5512d2e110fb469195d9e01d4206e25d);
+        
+    
+            marker_352a97ab96d04252b8c6b2a6b87c6bb7.bindTooltip(
+                `<div>
+                     Buddh International Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c652e89ca69841b287e73ff41182a736 = L.marker(
+                [30.1328, -97.6411],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_70c24f06938a4428a3eb8b38ddcc152d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_c652e89ca69841b287e73ff41182a736.setIcon(icon_70c24f06938a4428a3eb8b38ddcc152d);
+        
+    
+            marker_c652e89ca69841b287e73ff41182a736.bindTooltip(
+                `<div>
+                     Circuit of the Americas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_38539a70b89a44ca9ccd2d24e3e3e768 = L.marker(
+                [47.2197, 14.7647],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_3ccd43af3f0a4e2ea22dcf40d5b175d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_38539a70b89a44ca9ccd2d24e3e3e768.setIcon(icon_3ccd43af3f0a4e2ea22dcf40d5b175d3);
+        
+    
+            marker_38539a70b89a44ca9ccd2d24e3e3e768.bindTooltip(
+                `<div>
+                     Red Bull Ring
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75cca6f48c2a406e875b7c1ca960a875 = L.marker(
+                [43.4057, 39.9578],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_04c51e1b90754a129a77ba6b6483a96c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_75cca6f48c2a406e875b7c1ca960a875.setIcon(icon_04c51e1b90754a129a77ba6b6483a96c);
+        
+    
+            marker_75cca6f48c2a406e875b7c1ca960a875.bindTooltip(
+                `<div>
+                     Sochi Autodrom
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8e0035ff0374536820d3cedb9314172 = L.marker(
+                [40.7769, -74.0111],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_a2aa187a76be4d438d0c783340754539 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_d8e0035ff0374536820d3cedb9314172.setIcon(icon_a2aa187a76be4d438d0c783340754539);
+        
+    
+            marker_d8e0035ff0374536820d3cedb9314172.bindTooltip(
+                `<div>
+                     Port Imperial Street Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c782487c2174ad7bd6d8b5d4fb497c8 = L.marker(
+                [40.3725, 49.8533],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_25a0e6ad26d84db18b8896785f1ed5b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_5c782487c2174ad7bd6d8b5d4fb497c8.setIcon(icon_25a0e6ad26d84db18b8896785f1ed5b7);
+        
+    
+            marker_5c782487c2174ad7bd6d8b5d4fb497c8.bindTooltip(
+                `<div>
+                     Baku City Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d9c1ef2ee8d4e94b09d0b086e9ed1ba = L.marker(
+                [21.0166, 105.766],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_3068a5faa6f84f61a72a8f4c2c3c295a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_5d9c1ef2ee8d4e94b09d0b086e9ed1ba.setIcon(icon_3068a5faa6f84f61a72a8f4c2c3c295a);
+        
+    
+            marker_5d9c1ef2ee8d4e94b09d0b086e9ed1ba.bindTooltip(
+                `<div>
+                     Hanoi Street Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e328e89c48c4054b9db59c208c7e295 = L.marker(
+                [37.227, -8.6267],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_151ec896b42647ad9cddfb08348f326b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_5e328e89c48c4054b9db59c208c7e295.setIcon(icon_151ec896b42647ad9cddfb08348f326b);
+        
+    
+            marker_5e328e89c48c4054b9db59c208c7e295.bindTooltip(
+                `<div>
+                     Autódromo Internacional do Algarve
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec918700beab49349b684f56665fd97a = L.marker(
+                [43.9975, 11.3719],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_5b6b474c2aad4365a502a50f06632adf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_ec918700beab49349b684f56665fd97a.setIcon(icon_5b6b474c2aad4365a502a50f06632adf);
+        
+    
+            marker_ec918700beab49349b684f56665fd97a.bindTooltip(
+                `<div>
+                     Autodromo Internazionale del Mugello
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f376c72ba2ab451badf657376e506771 = L.marker(
+                [21.6319, 39.1044],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_ec5bf8220ebb4421b22991f658bf45c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_f376c72ba2ab451badf657376e506771.setIcon(icon_ec5bf8220ebb4421b22991f658bf45c0);
+        
+    
+            marker_f376c72ba2ab451badf657376e506771.bindTooltip(
+                `<div>
+                     Jeddah Corniche Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e781ab82f454f6daf150d4c30d724fc = L.marker(
+                [25.49, 51.4542],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_6fce52fca6914deda5b6b01a9d56c34a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_8e781ab82f454f6daf150d4c30d724fc.setIcon(icon_6fce52fca6914deda5b6b01a9d56c34a);
+        
+    
+            marker_8e781ab82f454f6daf150d4c30d724fc.bindTooltip(
+                `<div>
+                     Losail International Circuit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3c03d83ab5e45ee8e470eb7711ed286 = L.marker(
+                [25.9581, -80.2389],
+                {}
+            ).addTo(marker_cluster_52ccb6eb8774441ba4d887b9d74b4e68);
+        
+    
+            var icon_f1f163f6464841a1beca174eba2d2339 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag-checkered", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_f3c03d83ab5e45ee8e470eb7711ed286.setIcon(icon_f1f163f6464841a1beca174eba2d2339);
+        
+    
+            marker_f3c03d83ab5e45ee8e470eb7711ed286.bindTooltip(
+                `<div>
+                     Miami International Autodrome
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
