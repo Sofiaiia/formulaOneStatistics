@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import fastf1 as ff1
 from fastf1 import plotting
 import seaborn as sns
+sns.set_style("darkgrid")
 import folium
 from folium.plugins import MarkerCluster
 import webbrowser
@@ -21,7 +22,7 @@ def circuitsMap():
         folium.Marker(
             location=[row['lat'], row['lng']],
             tooltip=row['name'],
-            icon=folium.Icon(color='cadetblue', prefix='fa', icon='flag-checkered',icon_color='white')
+            icon=folium.Icon(color='#FF1801', prefix='fa', icon='flag-checkered',icon_color='white')
         ).add_to(map_cluster)
 
     circuits_map.save('mymap.html')
@@ -175,12 +176,10 @@ def fastestEachSeason():
     data['counts'] = 1
     data = data.groupby(['year', 'code', 'driverRef']).counts.count().to_frame().reset_index().sort_values(by='year', ascending=False)
 
-    # fastest = data.loc[data.groupby(['year'])['occ'].idxmax()]
     fastest = pd.merge(data, data.groupby(['year'])['counts'].max().to_frame(name='max').reset_index(), on='year', how='left')
     fastest = fastest[fastest['counts'] == fastest['max']][['year','code','driverRef','counts']]
     fastest.driverRef = fastest.driverRef.str.capitalize()
 
-    # Calculate the percentage of fastest lap per season
     fastest = pd.merge(fastest, fastest_data.groupby('year')['round'].max().reset_index(), on='year', how='left')
     fastest['percent'] = np.array(fastest['counts'])/np.array(fastest['round'])*100
     fastest['year'] = fastest['year'].astype(str)
@@ -200,13 +199,128 @@ def fastestEachSeason():
     ax.legend()
 
     for x,y, label, count in zip(fastest.percent, fastest.year, fastest.code, fastest.counts):
-        ax.annotate(label+'({} races)'.format(count), xy=(x+0.8,y), textcoords='data')
-        #ax.annotate('(%s, %s)' % xy, xy=xy, textcoords='data')
+        ax.annotate(label+'({} races)'.format(int(count)), xy=(x+0.8,y), textcoords='data')
 
     plt.xlabel('Percentage of Fastest Lap Wins(%)')
     plt.title('Who is the fastest driver in each season?', fontsize=18)
 
     plt.show()
 
+
+def barQualiFinal():
+    drivers = pd.read_csv("./data/drivers.csv")
+    results = pd.read_csv("./data/results.csv")
+    results.dropna(inplace=True)
+    merge = pd.merge(results, drivers, how="inner", on="driverId")
+    merge = merge.drop(['points','position', 'laps', 'url', 'nationality', 'dob', 'forename', 'code', 'number_y'], axis = 1)
+    status = pd.read_csv("./data/status.csv")
+    d1 = pd.merge(merge, status, how="inner", on='statusId')
+    data = d1.drop(['driverId', 'statusId', 'driverRef'], axis = 1)
+    races = pd.read_csv("./data/races.csv")
+    races = races.drop(['round', 'circuitId', 'date', 'time', 'url'], axis = 1)
+    cleanedData = pd.merge(data, races, how='inner', on='raceId')
+    constructors = pd.read_csv("./data/constructors.csv")
+    constructors = constructors.drop(['constructorRef', 'nationality', 'url', 'Unnamed: 5'], axis = 1)
+    d2 = pd.merge(cleanedData, constructors, how='inner', on = 'constructorId')
+    FinalData = d2.drop(['constructorId','raceId','number_x', 'positionText', 'positionText', 'milliseconds', 'time', 'rank'], axis = 1)
+
+    First = []
+    for i in range(1,11):
+        First += [FinalData[(FinalData['grid'] == 1) & (FinalData['positionOrder'] == i)].shape[0]]
+
+    Second =[]
+    for i in range(1,11):
+        Second += [FinalData[(FinalData['grid'] == 2) & (FinalData['positionOrder'] == i)].shape[0]]
+
+    Third = []
+    for i in range(1,11):
+        Third += [FinalData[(FinalData['grid'] == 3) & (FinalData['positionOrder'] == i)].shape[0]]
+
+    Fourth =[]
+    for i in range(1,11):
+        Fourth += [FinalData[(FinalData['grid'] == 4) & (FinalData['positionOrder'] == i)].shape[0]]
+
+    Fifth = []
+    for i in range(1,11):
+        Fifth += [FinalData[(FinalData['grid'] == 5) & (FinalData['positionOrder'] == i)].shape[0]]
+
+    barPlot = pd.DataFrame({
+        'First': First,
+        'Second': Second,
+        'Third':Third,
+        'Fourth':Fourth,
+        'Fifth': Fifth
+
+    }, index = ['1','2','3','4','5','6','7','8','9','10'])
+
+    barPlot.plot.bar(title='Driver Final Position Based on Qualifying', figsize=(15,7), grid = True)
+    plt.xlabel('Final position')
+    plt.ylabel('Number of Drivers')
+    plt.show()
+
+    #todo: dessa måste skrivas ut, vad är bäst?
+    nonepoints = (FinalData[(FinalData['grid'] == 1) & (FinalData['positionOrder'] >= 10)].shape[0]/230) * 100
+    points = (FinalData[(FinalData['grid'] == 1) & (FinalData['positionOrder'] <= 10)].shape[0]/230) * 100
+    podium = (FinalData[(FinalData['grid'] == 1) & (FinalData['positionOrder'] <= 3)].shape[0]/230) * 100
+
+
+def frequency():
+    results = pd.read_csv("./data/results.csv")
+    qualifying = pd.read_csv("./data/qualifying.csv")
+    final = results.merge(qualifying,on=['raceId','driverId'],suffixes=['_result','_qual'])
+
+    winprec = final[final.position_qual == 1].groupby('position_result',as_index=False).agg(count=pd.NamedAgg(column='resultId',aggfunc='nunique'))
+    winprec['perc'] = winprec['count']/winprec.sum()['count']
+
+    plt.figure(figsize=(15,5))
+    graph = sns.barplot(
+        data=winprec,
+        y ='perc',
+        x='position_result',
+        color='#FF1801'
+    ).set_title(
+        'Race result from pole position',
+        size=14
+    )
+
+    plt.xlabel('Final Race Result')
+    plt.ylabel('Frequency(%)')
+
+    plt.show()
+
+def functionSwitch(choise):
+    switcher={
+        1: circuitsMap,
+        2: topHostCircuits,
+        3: driverNationalities,
+        4: constructorWorldTitles,
+        5: racesPerTeam,
+        6: racesPerSeason,
+        7: speedVisualization,
+        8: fastestEachSeason,
+        9: frequency,
+        10: barQualiFinal
+    }
+
+    func = switcher.get(int(choise),lambda :"nothing")
+    print(func())
+
 if __name__ == "__main__":
-    racesPerSeason()
+    print("Welcome ti F1 statistics!")
+    while True:
+        print("1. World map with circuits")
+        print("2. Top host circuits")
+        print("3. Driver nationalities")
+        print("4. Constructor world titles")
+        print("5. Entered races per team")
+        print("6. Number of races per season")
+        print("7. Speed visualization")
+        print("8. Fastest driver each season")
+        print("9. Race result frequency from pole")
+        print("10. Quali(1-5) vs race result")
+
+        choise = input("Choose one topic you want to see (Q to quit):")
+        if choise == "Q":
+            break
+        else:
+            functionSwitch(choise)
