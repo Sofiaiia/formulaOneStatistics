@@ -1,15 +1,12 @@
-import folium as folium
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import fastf1 as ff1
-from fastf1 import plotting
 import seaborn as sns
 sns.set_style("darkgrid")
 import folium
 from folium.plugins import MarkerCluster
 import webbrowser
-from bokeh.palettes import Category20b
 import matplotlib as mpl
 from matplotlib.collections import LineCollection
 
@@ -36,6 +33,7 @@ def topHostCircuits():
     top_hosts = host_circuits[['cir_name']].cir_name.value_counts().reset_index().rename(
         columns={'index': 'name', 'cir_name': 'counts'}).head(20)
 
+    sns.set(font_scale=0.5)
     sns.barplot(top_hosts.counts, top_hosts.name,color='#FF1801')
     plt.title('Top 10 F1 host circuits')
     plt.xlabel('Number of races hosted')
@@ -243,14 +241,28 @@ def barQualiFinal():
     }, index = ['1','2','3','4','5','6','7','8','9','10'])
 
     barPlot.plot.bar(title='Driver Final Position Based on Qualifying', figsize=(15,7), grid = True)
+    plt.title("Driver Final Position Based on Qualifying", fontsize=20)
     plt.xlabel('Final position')
     plt.ylabel('Number of Drivers')
-    plt.show()
 
-    #todo: dessa måste skrivas ut, vad är bäst?
     nonepoints = (FinalData[(FinalData['grid'] == 1) & (FinalData['positionOrder'] >= 10)].shape[0]/230) * 100
     points = (FinalData[(FinalData['grid'] == 1) & (FinalData['positionOrder'] <= 10)].shape[0]/230) * 100
     podium = (FinalData[(FinalData['grid'] == 1) & (FinalData['positionOrder'] <= 3)].shape[0]/230) * 100
+
+    plt.text(1,135,"No points probability: " + str(nonepoints),fontsize=11,bbox=dict(boxstyle="round",
+                                                                         ec=(1., 0.5, 0.5),
+                                                                         fc=(1., 0.8, 0.8),
+                                                                         ))
+    plt.text(1,125,"Points probability: " + str(points),fontsize=11,bbox=dict(boxstyle="round",
+                                                                                     ec=(1., 0.5, 0.5),
+                                                                                     fc=(1., 0.8, 0.8),
+                                                                                     ))
+    plt.text(1,115,"Podium probability: " + str(podium),fontsize=11,bbox=dict(boxstyle="round",
+                                                                                     ec=(1., 0.5, 0.5),
+                                                                                     fc=(1., 0.8, 0.8),
+                                                                                     ))
+
+    plt.show()
 
 
 def frequency():
